@@ -93,3 +93,26 @@ main {
 footer {
     background-color: orange;
 }
+
+/* Media Queries for responsiveness tablets and laptops 768px and above */
+@media screen and (min-width: 768px) {
+/* Header */
+    nav {
+        display: block; /* Show the menu by default on larger screens */
+        position: relative; /* Reset position for larger screens */
+        box-shadow: none; /* Remove shadow on larger screens */
+        width: fit-content; /* Adjust width for larger screens */
+        padding-right: 1rem; /* Add padding to the right for larger screens */
+        }
+    #menu {
+        display: flex; /* Display menu items in a row */
+    }
+
+    #menu > li {
+        padding-left: 1rem; /* Add padding between menu items */
+    }
+
+    .nav-toggle-label {
+        display: none; /* Hide the toggle button on larger screens */
+    }
+}
