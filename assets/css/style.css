@@ -90,9 +90,12 @@ main {
 
 /* Hero Section */
 #hero {
-    height: 600px;
+    height: 800px;
     width: 100%;
-    background-color: lightgreen;
+    background-image: url("../images/hero-image.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Footer */
