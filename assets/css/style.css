@@ -83,10 +83,16 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
     /* Ensure the main content takes up remaining space */
     flex: 1 0 auto;
     margin-top: 47px; /* Adjust based on header height */
+}
+
+/* Hero Section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: lightgreen;
 }
 
 /* Footer */
