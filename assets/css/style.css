@@ -25,6 +25,10 @@ h1, h2, h3{
     color: #252525;
 }
 
+.hidden-heading {
+    display: none
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -149,6 +153,31 @@ hr {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
+}
+
+/* Times Section */
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center / cover;
+    /* Creating below to not have to add media queries for the background image */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times > div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+    /* Flex properties to allow wrapping and equal distribution */
+    flex: 1 1 200px; /* Allow items to grow and shrink, with a base width of 200px */
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid #ffffff;
+}
+
+#times > h3 {
+    /* Override the h3 styles set in the general styles */
+    color: #fafafa;
 }
 
 #benefits-image {
