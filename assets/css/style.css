@@ -187,6 +187,16 @@ hr {
 
 }
 
+/* Gallery Section */
+#photos img {
+    width: 100%;
+    line-height: 1em; /* Remove extra space below images */
+}
+
+#photos {
+    line-height: 0; /* Remove extra space below images */
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
