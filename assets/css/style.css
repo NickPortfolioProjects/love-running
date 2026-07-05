@@ -17,6 +17,14 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -33,13 +41,6 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
 #menu {
@@ -90,12 +91,29 @@ main {
 
 /* Hero Section */
 #hero {
-    height: 800px;
+    height: 600px;
     width: 100%;
     background-image: url("../images/hero-image.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+#cover-text {
+    /* Opacitiy and background color for the text container */
+    background-color: rgba(241, 109, 107, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width:80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -133,5 +151,22 @@ main {
 
     .nav-toggle-label {
         display: none; /* Hide the toggle button on larger screens */
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        /* Push main content down to accommodate the larger header */
+        margin-top: 79px;
+    }
+
+    /* Hero Section */
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
