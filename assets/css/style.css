@@ -212,6 +212,14 @@ hr {
     color: #3a3a3a;
 }
 
+/* Media Queries for responsiveness large or landscape 576px and above */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2; /* Display images in two columns */
+        column-gap: 0; /* Add some space between columns */
+    }
+}
+
 /* Media Queries for responsiveness tablets and laptops 768px and above */
 @media screen and (min-width: 768px) {
 /* Header */
@@ -265,12 +273,21 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery Section three columns */
+    #photos {
+        column-count: 3; /* Display images in three columns */
+    }
 }
 
 /* Large devices (Laptops and Desktops) 992px and above */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    #photos {
+        column-count: 4; /* Display images in four columns */
     }
 }
 
